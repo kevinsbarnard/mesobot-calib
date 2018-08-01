@@ -1,5 +1,5 @@
 # mesobot-calib
-Calibration process and example tracking for the Mesobot. Written using OpenCV 3.4.1
+Calibration process for the Mesobot. Written using OpenCV 3.4.1
 
 ## Usage
 To use the application, run its executable from the command line.
@@ -8,6 +8,9 @@ Example:
 ```bash
 ./stereo_calib -l calib/left -r calib/right -w 9 -h 6 -length 0.0225 -thresh 1.4 -check
 ```
+
+### Output
+The calibration information and settings will be placed into `calib_settings.yml`. Maps for OpenCV's remap function will be placed into `undistort_maps.yml`.
 
 ### Options
 There are a variety of options available for the calibration process. Of them, only `-l`, `-r`, `-w`, `-h`, `-length`, and `-thresh` are required for the program to function.
